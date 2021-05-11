@@ -13,5 +13,16 @@
       {% endif %}
     </h3>
     <p>This is a very bare bones Apostrophe project. Now, get to work and make a real website!</p>
+
+
+    {{ apos.singleton(data.page, 'textBlock', 'apostrophe-rich-text', {
+      toolbar: [ 'Styles', 'Bold', 'Italic', 'Split','SourceArea' ],
+      styles: [
+        { name: 'Paragraph', element: 'p' },
+        { name: 'Section heading', element: 'h2' },
+        { name: 'Sub-section heading', element: 'h3' }
+      ],
+      defaultElement: 'h2'
+    }) }}
   </div>
 {% endblock %}

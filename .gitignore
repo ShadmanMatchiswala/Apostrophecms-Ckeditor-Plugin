@@ -16,3 +16,4 @@
 /.jshintrc
 /public/js/_site-compiled.js
 .env
+yarn.lock
